@@ -1,0 +1,24 @@
+{
+  "name": "rossel",
+  "version": "1.0.0",
+  "description": "Papeleria creativa y mas",
+  "main": "index.js",
+  "scripts": {
+    "sass-dev": "sass --watch --update --style=expanded sass/main.scss:css/style.css",
+    "sass-prod": "sass --no-source-map --style=compressed sass/main.scss:css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dav24github/Rossel-website.git"
+  },
+  "author": "David Escalante Sossa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dav24github/Rossel-website/issues"
+  },
+  "homepage": "https://github.com/dav24github/Rossel-website#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.51.0"
+  }
+}
