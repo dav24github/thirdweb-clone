@@ -6,20 +6,387 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <!--==================== CSS ====================-->
     <link rel="stylesheet" href="css/style.css" />
 
+    <!--==================== UNICONS ====================-->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+
+    <!--==================== FONTS ====================-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
   </head>
   <body>
-    Hello World!
+    <header class="header">
+      <div class="header__container">
+        <a class="header__logo" href="#">
+          <img src="/img/logo.svg" alt="" />
+        </a>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Home</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Contact</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="#">Career <span>2</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__menu">
+          <input class="header__menu-check" type="checkbox" />
+          <span>Menu</span>
+          <img src="img/menu.svg" alt="" />
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__main">
+          <div class="hero__text-box">
+            <div class="line">
+              <h1>Design studio</h1>
+            </div>
+            <div class="line">
+              <h1>for the</h1>
+            </div>
+            <div class="line">
+              <h1>web3 world</h1>
+            </div>
+          </div>
+          <div class="hero__image"></div>
+        </div>
+        <div class="hero__bottom">
+          <a class="hero__bottom-arrow" href="#"></a>
+          <p class="hero__bottom-text">
+            We help companies design their products to be ready for web3 world
+          </p>
+        </div>
+      </section>
+
+      <section class="partners">
+        <div class="partners__container">
+          <p class="text">Our clients are backed by:</p>
+          <div class="partners__wrap">
+            <div class="partners__box">
+              <img src="img/logo-ycombinator.svg" alt="" />
+            </div>
+            <div class="partners__box">
+              <img src="img/logo-coinbase.svg" alt="" />
+            </div>
+            <div class="partners__box">
+              <img src="img/logo-a16z.png" alt="" />
+            </div>
+            <div class="partners__box">
+              <img src="img/logo-blockchange.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="blur"></div>
+        <div class="about__wrap">
+          <div class="about__text-box">
+            <h2 class="heading-secondary">What is Web3 studio?</h2>
+            <p class="text">
+              Things around crypto, NFTs and web3 as a whole are unbelievably
+              interesting. Unfortunately, the overall usability as well as the
+              quality of the UI is often still not up to the task. To achieve
+              mass adoption, overcoming those hurdles will be key. And this is
+              where our story begins.
+            </p>
+          </div>
+          <div class="about__image">
+            <img src="img/text-infinite.svg" alt="" />
+            <svg
+              width="594"
+              height="217"
+              viewBox="0 0 594 217"
+              fill="none"
+              xmlns="https://www.w3.org/2000/svg"
+            >
+              <g clip-path="url(#clip0_206_1317)">
+                <path
+                  d="M592.5 107.717C592.5 167.204 544.27 215.433 484.783 215.433C417.436 215.433 350.128 161.595 296.25 107.717C242.372 53.8385 175.064 0 107.716 0C48.2295 0 0 48.2295 0 107.717C0 167.204 48.2295 215.433 107.716 215.433C175.064 215.433 242.372 161.595 296.25 107.717C350.128 53.8385 417.436 0 484.783 0C544.27 0 592.5 48.2295 592.5 107.717Z"
+                  stroke="white"
+                  stroke-miterlimit="10"
+                  stroke-linecap="square"
+                />
+              </g>
+              <defs>
+                <clipPath id="clip0_206_1317">
+                  <rect width="594" height="217" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects">
+        <h1 class="heading-primary u-margin-bottom-tiny">Projects</h1>
+        <div class="projects__wrap">
+          <div class="projects__column">
+            <div class="projects__card">
+              <div class="projects__card-image--box">
+                <img src="img/casestudy-01.jpg" alt="" />
+              </div>
+              <a class="projects__card-text--box" href="#">
+                <div>
+                  <h2 class="heading-secondary">WingRiders</h2>
+                  <p class="text">UX/UI Design, Design system</p>
+                </div>
+              </a>
+            </div>
+            <div class="projects__card">
+              <div class="projects__card-image--box">
+                <img src="img/casestudy-03.jpg" alt="" />
+              </div>
+              <a class="projects__card-text--box" href="#">
+                <div>
+                  <h2 class="heading-secondary">WingRiders</h2>
+                  <p class="text">UX/UI Design, Design system</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="projects__column">
+            <div class="projects__card right">
+              <div class="projects__card-image--box">
+                <img src="img/casestudy-02.jpg" alt="" />
+              </div>
+              <a class="projects__card-text--box" href="#">
+                <div>
+                  <h2 class="heading-secondary">WingRiders</h2>
+                  <p class="text">UX/UI Design, Design system</p>
+                </div>
+              </a>
+            </div>
+            <div class="projects__banner">
+              <div class="projects__banner-wraper">
+                <h2 class="heading-secondary">How we design web3 products</h2>
+                <span>Comming soon</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="others">
+        <h1 class="heading-primary u-margin-bottom-tiny">Other projects</h1>
+        <div class="others__wrap">
+          <div class="others__cards">
+            <div class="others__cards-item">
+              <img src="img/other01.jpg" alt="" />
+            </div>
+            <div class="others__cards-item">
+              <img src="img/other03.jpg" alt="" />
+            </div>
+            <div class="others__cards-item">
+              <img src="img/other04.jpg" alt="" />
+            </div>
+          </div>
+          <div class="others__pagination">
+            <div class="others__pagination-dots">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="others__pagination-arrows">
+              <i class="uil uil-angle-left-b"></i>
+              <i class="uil uil-angle-right-b"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="divider">
+        <img src="img/divider.svg" alt="" />
+        <svg
+          class="live"
+          width="1920"
+          height="704"
+          viewBox="0 0 1920 704"
+          fill="none"
+          xmlns="https://www.w3.org/2000/svg"
+        >
+          <g clip-path="url(#clip0_142_646)">
+            <line x1="-3" y1="353.5" x2="480" y2="353.5" stroke="white" />
+            <line x1="481" y1="592.5" x2="960" y2="592.5" stroke="white" />
+            <line x1="960" y1="351.5" x2="1440" y2="351.5" stroke="white" />
+            <line x1="480.5" y1="353" x2="480.5" y2="593" stroke="white" />
+            <line x1="960.5" y1="352" x2="960.5" y2="593" stroke="white" />
+            <line x1="1680.5" y1="112" x2="1680.5" y2="352" stroke="white" />
+            <line x1="1920" y1="112.5" x2="1680" y2="112.5" stroke="white" />
+            <line
+              x1="1439.57"
+              y1="351.309"
+              x2="1578.57"
+              y2="110.554"
+              stroke="white"
+            />
+            <line
+              x1="1679.93"
+              y1="351.781"
+              x2="1578.54"
+              y2="110.194"
+              stroke="white"
+            />
+          </g>
+          <defs>
+            <clipPath id="clip0_142_646">
+              <rect width="1920" height="704" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </section>
+
+      <section class="howto">
+        <div class="blur"></div>
+        <h1 class="heading-primary">
+          How we can <br />
+          help grow
+        </h1>
+        <div class="howto__wrap">
+          <div class="howto__menu">
+            <div class="howto__option active">
+              <h2 class="heading-secondary">
+                <span class="howto__dot"></span>Product clarity
+              </h2>
+            </div>
+            <div class="howto__option">
+              <h2 class="heading-secondary">
+                <span class="howto__dot"></span>UX/UI design
+              </h2>
+            </div>
+            <div class="howto__option">
+              <h2 class="heading-secondary">
+                <span class="howto__dot"></span>Maintain process
+              </h2>
+            </div>
+          </div>
+          <div class="howto__container">
+            <div class="howto__content show">
+              <div class="howto__img-box">
+                <img src="img/help01.jpg" alt="" />
+              </div>
+              <div class="howto__text-box">
+                <p class="text">
+                  Are you at the idea stage? We will help you identify the
+                  critical MVP product scope.
+                </p>
+                <ul class="text">
+                  <li>product goal&vision</li>
+                  <li>brand voice</li>
+                  <li>product positioning</li>
+                </ul>
+              </div>
+            </div>
+            <div class="howto__content">
+              <img src="img/help02.jpg" alt="" />
+              <h2 class="heading-secondary">
+                Are you at the idea stage? We will help you identify the
+                critical MVP product scope.
+              </h2>
+              <ul>
+                <li>product goal&vision</li>
+                <li>brand voice</li>
+                <li>product positioning</li>
+              </ul>
+            </div>
+            <div class="howto__content">
+              <img src="img/help03.jpg" alt="" />
+              <h2 class="heading-secondary">
+                Are you at the idea stage? We will help you identify the
+                critical MVP product scope.
+              </h2>
+              <ul>
+                <li>product goal&vision</li>
+                <li>brand voice</li>
+                <li>product positioning</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="aboutus">
+        <div class="aboutus__text-box">
+          <div class="heading-primary">About</div>
+          <p class="text">
+            Team of product and brand designers that are really passionate about
+            blockchain technology and good design. We are not just UI freaks! We
+            advocate users for better product experience and common sense.
+          </p>
+          <a class="btn" href="#"
+            >More about us <i class="uil uil-arrow-right"></i
+          ></a>
+        </div>
+        <div class="aboutus__shape shape1"></div>
+        <div class="aboutus__shape shape2"></div>
+        <div class="aboutus__shape shape3"></div>
+        <div class="aboutus__photo photo1">
+          <img src="img/about01.jpg" alt="" />
+        </div>
+        <div class="aboutus__photo photo2">
+          <img src="img/about02.jpg" alt="" />
+        </div>
+        <div class="aboutus__photo photo3">
+          <img src="img/about03.jpg" alt="" />
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer__wrap">
+          <div class="footer__text-box">
+            <h2 class="heading__footer">Web3 product studio</h2>
+            <p class="text">
+              Feel free to reach out if you want to collaborate with us, or
+              simply have a chat.
+            </p>
+            <a class="btn" href="#"
+              >hello@thirdweb.studio <i class="uil uil-arrow-right"></i
+            ></a>
+          </div>
+          <div class="footer__links">
+            <div class="footer__links-box">
+              <p class="sub">Our projects</p>
+              <a class="text" href="">WingRiders</a>
+              <a class="text" href="">Trackee</a>
+              <a class="text" href="">Worldcoin</a>
+            </div>
+            <div class="footer__links-box">
+              <p class="sub">Follow us</p>
+              <a class="text" href="">Facebook</a>
+              <a class="text" href="">Instagram</a>
+              <a class="text" href="">Dribbble</a>
+              <a class="text" href="">Linkedin</a>
+            </div>
+          </div>
+        </div>
+        <div class="footer__back-to-top text">
+          <i class="uil uil-arrow-left"></i> Back to top
+        </div>
+        <div class="blur"></div>
+      </footer>
+    </main>
   </body>
 </html>
