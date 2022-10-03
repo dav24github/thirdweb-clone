@@ -4,8 +4,8 @@
   "description": "Papeleria creativa y mas",
   "main": "index.js",
   "scripts": {
-    "sass-dev": "sass --watch --update --style=expanded sass/main.scss:css/style.css",
-    "sass-prod": "sass --no-source-map --style=compressed sass/main.scss:css/style.css"
+    "sass-dev": "sass --watch --update --style=expanded sass/main.scss:css/style.css sass/pages:css",
+    "sass-prod": "sass --no-source-map --style=compressed sass/main.scss:css/style.css sass/pages:css"
   },
   "repository": {
     "type": "git",

@@ -8,6 +8,7 @@
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
 
     <!--==================== UNICONS ====================-->
     <link
@@ -32,29 +33,64 @@
         <nav class="header__nav">
           <ul class="header__nav-list">
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Home</a>
+              <a class="link" href="#">Home</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">About</a>
+              <a class="link" href="about.html">About</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Contact</a>
+              <a class="link" href="#">Contact</a>
             </li>
             <li class="header__nav-item">
-              <a class="header__nav-link" href="#">Career <span>2</span></a>
+              <a class="link" href="#">Career <span>2</span></a>
             </li>
           </ul>
         </nav>
         <div class="header__menu">
-          <input class="header__menu-check" type="checkbox" />
           <span>Menu</span>
           <img src="img/menu.svg" alt="" />
         </div>
       </div>
     </header>
 
+    <div class="menu close">
+      <div class="menu__navbar">
+        <a class="menu__logo" href="#"><img src="img/logo.svg" alt="" /></a>
+        <div class="menu__toggle">
+          <span>Close</span><img src="img/close.svg" alt="" />
+        </div>
+      </div>
+      <div class="menu__line line1"></div>
+      <div class="menu__line line2"></div>
+      <div class="menu__home">
+        <h1 class="heading-primary"><a href="#">Home</a></h1>
+        <div class="menu__box-links">
+          <p class="menu__text-main">Our Projects</p>
+          <a class="text" href="#">Trackee</a>
+          <a class="text" href="#">WingRiders</a>
+          <a class="text" href="#">Worldcoin</a>
+        </div>
+      </div>
+      <div class="menu__about">
+        <h1 class="heading-primary"><a href="#">About</a></h1>
+        <div class="menu__box-links">
+          <p class="menu__text-main">Follow us</p>
+          <a class="text" href="#">Instagram</a>
+          <a class="text" href="#">Dribbble</a>
+          <a class="text" href="#">Linkedin</a>
+        </div>
+      </div>
+      <div class="menu__contact">
+        <h1 class="heading-primary"><a href="#">Contact</a></h1>
+        <div class="menu__box-links">
+          <p class="menu__text-main">Direct contact</p>
+          <a class="text" href="">hello@thirdweb.studio</a>
+        </div>
+      </div>
+    </div>
+
     <main>
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero__main">
           <div class="hero__text-box">
             <div class="line">
@@ -70,17 +106,17 @@
           <div class="hero__image"></div>
         </div>
         <div class="hero__bottom">
-          <a class="hero__bottom-arrow" href="#"></a>
+          <a class="hero__bottom-arrow" href="#partners"></a>
           <p class="hero__bottom-text">
             We help companies design their products to be ready for web3 world
           </p>
         </div>
       </section>
 
-      <section class="partners">
+      <section class="partners" id="partners">
         <div class="partners__container">
           <p class="text">Our clients are backed by:</p>
-          <div class="partners__wrap">
+          <div class="partners__wrapper">
             <div class="partners__box">
               <img src="img/logo-ycombinator.svg" alt="" />
             </div>
@@ -99,7 +135,7 @@
 
       <section class="about">
         <div class="blur"></div>
-        <div class="about__wrap">
+        <div class="about__wrapper">
           <div class="about__text-box">
             <h2 class="heading-secondary">What is Web3 studio?</h2>
             <p class="text">
@@ -139,7 +175,7 @@
 
       <section class="projects">
         <h1 class="heading-primary u-margin-bottom-tiny">Projects</h1>
-        <div class="projects__wrap">
+        <div class="projects__wrapper">
           <div class="projects__column">
             <div class="projects__card">
               <div class="projects__card-image--box">
@@ -177,7 +213,7 @@
               </a>
             </div>
             <div class="projects__banner">
-              <div class="projects__banner-wraper">
+              <div class="projects__banner-wrapperer">
                 <h2 class="heading-secondary">How we design web3 products</h2>
                 <span>Comming soon</span>
               </div>
@@ -188,33 +224,38 @@
 
       <section class="others">
         <h1 class="heading-primary u-margin-bottom-tiny">Other projects</h1>
-        <div class="others__wrap">
-          <div class="others__cards">
-            <div class="others__cards-item">
-              <img src="img/other01.jpg" alt="" />
-            </div>
-            <div class="others__cards-item">
-              <img src="img/other03.jpg" alt="" />
-            </div>
-            <div class="others__cards-item">
-              <img src="img/other04.jpg" alt="" />
+        <div class="carousel other__carousel">
+          <div class="carousel__container">
+            <div class="carousel__wrapper">
+              <ul class="carousel__track">
+                <li class="carousel__slide">
+                  <img src="img/other03.jpg" alt="" />
+                </li>
+                <li class="carousel__slide">
+                  <img src="img/other04.jpg" alt="" />
+                </li>
+                <li class="carousel__slide">
+                  <img src="img/other02.jpg" alt="" />
+                </li>
+                <li class="carousel__slide">
+                  <img src="img/other05.jpg" alt="" />
+                </li>
+                <li class="carousel__slide">
+                  <img src="img/other06.jpg" alt="" />
+                </li>
+                <li class="carousel__slide">
+                  <img src="img/other07.jpg" alt="" />
+                </li>
+                <li class="carousel__slide">
+                  <img src="img/other08.jpg" alt="" />
+                </li>
+                <li class="carousel__slide">
+                  <img src="img/other01.jpg" alt="" />
+                </li>
+              </ul>
             </div>
           </div>
-          <div class="others__pagination">
-            <div class="others__pagination-dots">
-              <span class="active"></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="others__pagination-arrows">
-              <i class="uil uil-angle-left-b"></i>
-              <i class="uil uil-angle-right-b"></i>
-            </div>
-          </div>
+          <div class="pagination others__pagination"></div>
         </div>
       </section>
 
@@ -265,7 +306,7 @@
           How we can <br />
           help grow
         </h1>
-        <div class="howto__wrap">
+        <div class="howto__wrapper">
           <div class="howto__menu">
             <div class="howto__option active">
               <h2 class="heading-secondary">
@@ -301,28 +342,36 @@
               </div>
             </div>
             <div class="howto__content">
-              <img src="img/help02.jpg" alt="" />
-              <h2 class="heading-secondary">
-                Are you at the idea stage? We will help you identify the
-                critical MVP product scope.
-              </h2>
-              <ul>
-                <li>product goal&vision</li>
-                <li>brand voice</li>
-                <li>product positioning</li>
-              </ul>
+              <div class="howto__img-box">
+                <img src="img/help02.jpg" alt="" />
+              </div>
+              <div class="howto__text-box">
+                <p class="text">
+                  Are you at the idea stage? We will help you identify the
+                  critical MVP product scope.
+                </p>
+                <ul class="text">
+                  <li>product goal&vision</li>
+                  <li>brand voice</li>
+                  <li>product positioning</li>
+                </ul>
+              </div>
             </div>
             <div class="howto__content">
-              <img src="img/help03.jpg" alt="" />
-              <h2 class="heading-secondary">
-                Are you at the idea stage? We will help you identify the
-                critical MVP product scope.
-              </h2>
-              <ul>
-                <li>product goal&vision</li>
-                <li>brand voice</li>
-                <li>product positioning</li>
-              </ul>
+              <div class="howto__img-box">
+                <img src="img/help03.jpg" alt="" />
+              </div>
+              <div class="howto__text-box">
+                <p class="text">
+                  Are you at the idea stage? We will help you identify the
+                  critical MVP product scope.
+                </p>
+                <ul class="text">
+                  <li>product goal&vision</li>
+                  <li>brand voice</li>
+                  <li>product positioning</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -337,7 +386,7 @@
             advocate users for better product experience and common sense.
           </p>
           <a class="btn" href="#"
-            >More about us <i class="uil uil-arrow-right"></i
+            >More about us <i class="btn-icon uil uil-arrow-right"></i
           ></a>
         </div>
         <div class="aboutus__shape shape1"></div>
@@ -355,7 +404,7 @@
       </section>
 
       <footer class="footer">
-        <div class="footer__wrap">
+        <div class="footer__wrapper">
           <div class="footer__text-box">
             <h2 class="heading__footer">Web3 product studio</h2>
             <p class="text">
@@ -363,30 +412,33 @@
               simply have a chat.
             </p>
             <a class="btn" href="#"
-              >hello@thirdweb.studio <i class="uil uil-arrow-right"></i
+              >hello@thirdweb.studio <i class="btn-icon uil uil-arrow-right"></i
             ></a>
           </div>
           <div class="footer__links">
             <div class="footer__links-box">
               <p class="sub">Our projects</p>
-              <a class="text" href="">WingRiders</a>
-              <a class="text" href="">Trackee</a>
-              <a class="text" href="">Worldcoin</a>
+              <a class="text link" href="">WingRiders</a>
+              <a class="text link" href="">Trackee</a>
+              <a class="text link" href="">Worldcoin</a>
             </div>
             <div class="footer__links-box">
               <p class="sub">Follow us</p>
-              <a class="text" href="">Facebook</a>
-              <a class="text" href="">Instagram</a>
-              <a class="text" href="">Dribbble</a>
-              <a class="text" href="">Linkedin</a>
+              <a class="text link" href="">Facebook</a>
+              <a class="text link" href="">Instagram</a>
+              <a class="text link" href="">Dribbble</a>
+              <a class="text link" href="">Linkedin</a>
             </div>
           </div>
         </div>
-        <div class="footer__back-to-top text">
-          <i class="uil uil-arrow-left"></i> Back to top
-        </div>
+        <a class="btn footer__back-to-top" href="#hero">
+          <i class="btn-icon uil uil-arrow-left"></i> Back to top
+        </a>
         <div class="blur"></div>
       </footer>
     </main>
+
+    <!--==================== JS ====================-->
+    <script src="js/index.js"></script>
   </body>
 </html>
